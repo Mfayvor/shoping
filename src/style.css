@@ -33,6 +33,7 @@ a{
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .cart{
@@ -82,6 +83,7 @@ a{
 .item{
   border: 2px solid #212529;
   border-radius: 4px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(225, 255, 255, 0.7);
 }
 
 .details{
@@ -95,6 +97,9 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.quantity{
+  /* padding-top: 3.5px; */
 }
 
 .buttons{
@@ -111,6 +116,12 @@ a{
   color: green;
 }
 
+/* .bi-dash-lg,
+.bi-plus-lg{
+  border-radius: 4px;
+  padding: 3px;
+} */
+
 
 /**
 * ? styles rules for label and some buttons
@@ -121,7 +132,9 @@ a{
   margin-bottom: 20px;
 }
 
-.homeBtn{
+.homeBtn,
+.checkout,
+.removeAll{
   background-color: #212529;
   color: white;
   border: none;
@@ -129,6 +142,14 @@ a{
   border-radius: 3px;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.checkout{
+  background-color: green;
+}
+
+.removeAll{
+  background-color: red;
 }
 
 .bi-x-lg{
@@ -164,3 +185,17 @@ a{
   justify-content: space-between;
   
 }
+
+.title-price{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price{
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;  
+}
+
